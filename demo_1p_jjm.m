@@ -181,6 +181,7 @@ end
 
 make_tiff_output = true; % save a movie
 
+% filtered movie 
 if make_tiff_output
     tiff_output_path = strcat(folder,'/', name(1:end-4),'_filtered_rigidcorrected','.tif');
     tiffobj = Tiff(tiff_output_path, 'w');
@@ -191,11 +192,50 @@ if make_tiff_output
     setTag(tiffobj,'ImageLength',size(M1(:,:,1), 1));
     setTag(tiffobj,'ImageWidth',size(M1(:,:,1), 2));
     
+    %M1 is filtered data
+    %M1f is "full" or unfiltered data
     %convert to uint8
     M1_uint8 = uint8(M1);
-    tiffobj.write(M1(:,:,1), tiff_output_path);
+    tiffobj.write(M1_uint8(:,:,1), tiff_output_path);
     for t =2 : size(Y, 3) 
-        imwrite(M1(:,:,t), tiff_output_path, 'writemode', 'append');
+        writeDirectory(tiffobj); 
+        setTag(tiffobj,'Photometric',Tiff.Photometric.MinIsBlack);
+        setTag(tiffobj,'Compression',Tiff.Compression.None);
+        setTag(tiffobj,'BitsPerSample',8);
+        setTag(tiffobj,'PlanarConfiguration',Tiff.PlanarConfiguration.Chunky);
+        setTag(tiffobj,'ImageLength',size(M1(:,:,1), 1));
+        setTag(tiffobj,'ImageWidth',size(M1(:,:,1), 2));
+        tiffobj.write(M1_uint8(:,:,t), tiff_output_path);
     end
+    close(tiffobj); 
+end
+    
+% unfiltered movie 
+if make_tiff_output
+    tiff_output_path = strcat(folder,'/', name(1:end-4),'_unfiltered_rigidcorrected','.tif');
+    tiffobj = Tiff(tiff_output_path, 'w');
+    setTag(tiffobj,'Photometric',Tiff.Photometric.MinIsBlack);
+    setTag(tiffobj,'Compression',Tiff.Compression.None);
+    setTag(tiffobj,'BitsPerSample',8);
+    setTag(tiffobj,'PlanarConfiguration',Tiff.PlanarConfiguration.Chunky);
+    setTag(tiffobj,'ImageLength',size(Mr(:,:,1), 1));
+    setTag(tiffobj,'ImageWidth',size(Mr(:,:,1), 2));
+    
+    %M1 is filtered data
+    %M1f is "full" or unfiltered data
+    %convert to uint8
+    Mr_uint8 = uint8(Mr);
+    tiffobj.write(Mr_uint8(:,:,1), tiff_output_path);
+    for t =2 : size(Y, 3) 
+        writeDirectory(tiffobj); 
+        setTag(tiffobj,'Photometric',Tiff.Photometric.MinIsBlack);
+        setTag(tiffobj,'Compression',Tiff.Compression.None);
+        setTag(tiffobj,'BitsPerSample',8);
+        setTag(tiffobj,'PlanarConfiguration',Tiff.PlanarConfiguration.Chunky);
+        setTag(tiffobj,'ImageLength',size(Mr(:,:,1), 1));
+        setTag(tiffobj,'ImageWidth',size(Mr(:,:,1), 2));
+        tiffobj.write(Mr_uint8(:,:,t), tiff_output_path);
+    end
+    close(tiffobj); 
 end
 
