@@ -20,7 +20,8 @@ ssub = str2num(INPUT_ssub) ;
 if run_parallel == true
     
     parfor x = movie_start:movie_end
-        run_normcorr_jjm(strcat(dirpath, 'msCam', num2str(x), '.avi'), gSig, GSiz, Fs, ssub);
+        disp(strcat(dirpath, 'msCam', num2str(x), '.avi')
+        %run_normcorr_jjm(strcat(dirpath, 'msCam', num2str(x), '.avi'), gSig, GSiz, Fs, ssub);
     end
     
 else
