@@ -6,7 +6,7 @@
 % Example file is provided from the miniscope project page
 % www.miniscope.org
 
-function [] = run_normcorr_jjm(nam, gSig, GSiz, )
+function [] = run_normcorr_jjm(nam, gSig, GSiz, Fs, ssub)
 
     Yf = read_file(name);
     Yf = single(Yf);
