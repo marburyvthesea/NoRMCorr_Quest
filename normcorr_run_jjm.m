@@ -27,6 +27,7 @@ if run_parallel == true
 else
 
     for x = (movie_start): movie_end
+        disp('parralel is false')
         disp(strcat(dirpath, '/msCam', num2str(x), '.avi'))
         jjm_normcorr_fn(strcat(dirpath, '/msCam', num2str(x), '.avi'), gSig, gSiz, Fs, ssub);
 
