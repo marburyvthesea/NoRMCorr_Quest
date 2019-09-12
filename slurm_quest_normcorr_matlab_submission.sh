@@ -13,7 +13,8 @@ cd ~
 
 #path to directory
 INPUT_dirpath=$1
-
+INPUT_movie_start=$2
+INPUT_movie_end=$3
 
 # other parameters for CNMF_E
 
@@ -38,6 +39,6 @@ module load matlab/r2018a
 cd /projects/p30771/MATLAB/NoRMCorre_JJM
 #run  
 
-matlab -nosplash -nodesktop -r "dirpath = '$INPUT_dirpath';run_parallel = '$INPUT_parallel_enable';movie_start = str2num('$INPUT_movie_start');movie_end = str2num('$INPUT_movie_end');gSig=str2num('$INPUT_gSig');gSiz=str2num('$INPUT_gSiz');Fs=str2num('$INPUT_Fs');ssub=str2num('$INPUT_ssub');parallel_enable='$INPUT_parallel_enable';disp(file_to_analyze);run('projects/p30771/MATLAB/NoRMCorre_JJM/normcorr_run_JJM.m');exit;"
+matlab -nosplash -nodesktop -r "dirpath = '$INPUT_dirpath';run_parallel = '$INPUT_parallel_enable';movie_start = str2num('$INPUT_movie_start');movie_end = str2num('$INPUT_movie_end');gSig=str2num('$INPUT_gSig');gSiz=str2num('$INPUT_gSiz');Fs=str2num('$INPUT_Fs');ssub=str2num('$INPUT_ssub');disp(dirpath);run('projects/p30771/MATLAB/NoRMCorre_JJM/normcorr_run_JJM.m');exit;"
 
 
