@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -A p30771
-#SBATCH -p short
-#SBATCH -t 00:05:00
+#SBATCH -p normal
+#SBATCH -t 12:00:00
 #SBATCH --job-name="slurm_matlab_normcorr_run"
 #SBATCH -N 1
 #SBATCH -n 20 
