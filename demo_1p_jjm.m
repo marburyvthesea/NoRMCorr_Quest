@@ -6,9 +6,14 @@
 clear;
 gcp;
 %% download data and convert to single precision
-folder = '/Users/johnmarshall/Documents/Analysis/MiniscopeMovies/8_20_2019';
-addpath(folder); 
-name = 'H16_M35_S34msCam1_Substack_300-400.avi';
+name = '/Volumes/My_Passport/MiniscopeMovies/GRIN_h003_H12_M29_S0/msCam7.avi';
+path_split = split(name, '.');
+name_split = split(path_split{1,1}, '/');
+size_path = size(name_split);
+movie_name = name_split{size_path(1), 1};
+
+addpath(path_split{2,1});
+
 if ~exist(name,'file')  % download file if it doesn't exist in the directory
     url = 'https://caiman.flatironinstitute.org/~neuro/normcorre_datasets/msCam13.avi';
     fprintf('downloading the file...');
@@ -49,7 +54,7 @@ else
 end
 %% first try out rigid motion correction
     % exclude boundaries due to high pass filtering effects
-options_r = NoRMCorreSetParms('d1',d1-bound,'d2',d2-bound,'bin_width',200,'max_shift',20,'iter',1,'correct_bidir',false);
+options_r = NoRMCorreSetParms('d1',d1-bound,'d2',d2-bound,'bin_width',200,'max_shift',20,'iter',1,'correct_bidir',false,'output_type','hdf5','h5_filename',strcat(movie_name, '_motion_corrected'));
 
 %% register using the high pass filtered data and apply shifts to original data
 tic; [M1,shifts1,template1] = normcorre_batch(Y(bound/2+1:end-bound/2,bound/2+1:end-bound/2,:),options_r); toc % register filtered data
