@@ -5,8 +5,9 @@ function [result] = quest_run_normcorr(path_to_data,name)
 % Example file is provided from the miniscope project page
 % www.miniscope.org
 
-clear;
-gcp;
+
+poolProps = gcp ; 
+disp(poolProps)
 %% download data and convert to single precision
 %path_to_data = 'F:\JJM\miniscope_data\Dock10_Cre_mouse_2_Nov_8_2022_2023_01_17_14_52_51\' ;
 addpath(genpath(path_to_data))
