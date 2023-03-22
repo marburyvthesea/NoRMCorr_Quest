@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -A p30771
-#SBATCH -p normal
-#SBATCH -t 12:00:00
+#SBATCH -p short
+#SBATCH -t 04:00:00
 #SBATCH -o ./logfiles/normcorrMatlab.%x-%j.out # STDOUT
 #SBATCH --job-name="slurm_matlab_normcorr"
 #SBATCH --mem-per-cpu=5200M
@@ -25,9 +25,9 @@ export PATH=$PATH/projects/p30771/
 module load matlab/r2018a
 
 #cd to script directory
-
+cd /home/jma819/NoRMCorre_Quest
 #run  
 
 
 
-matlab -nosplash -nodesktop -r "addpath(genpath('/projects/p30771/MATLAB/CNMF_E_jjm'));folder='$INPUT_folder';fnRunNormcorrSession(folder);exit;"
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorre_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';fnRunNormcorrSession(folder);exit;"
