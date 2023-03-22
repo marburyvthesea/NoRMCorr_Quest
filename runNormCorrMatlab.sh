@@ -3,7 +3,7 @@
 #SBATCH -p normal
 #SBATCH -t 12:00:00
 #SBATCH -o ./logfiles/normcorrMatlab.%x-%j.out # STDOUT
-#SBATCH --job-name="slurm_matlab_normcorr"
+#SBATCH --job-name="slurm_matlab_normcore"
 #SBATCH --mem-per-cpu=5200M
 #SBATCH -N 1
 #SBATCH -n 16
