@@ -30,9 +30,9 @@ export PATH=$PATH/projects/p30771/
 module load matlab/r2018a
 
 #cd to script directory
-cd /home/jma819/NoRMCorre_Quest
+cd /home/jma819/NoRMCorr_Quest
 #run  
 
 
 
-matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorre_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);fnRunNormcorrSession(folder, gSig, 5);exit;"
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);groupMotionCorrectedFiles(folder, '*motion_corrected.tif', 5);exit;"

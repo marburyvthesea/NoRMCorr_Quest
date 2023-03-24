@@ -120,6 +120,9 @@ figure;
 [p, f, e] = fileparts(strcat(path_to_data, name)) ; 
 fToSave = strcat(p, '\',  f, '___motion_corrected', '.tif') ; 
 
+disp('saving data');
+disp(fToSave); 
+
 I = mat2gray(Mpr(:,:,1));
 %I = M2(:,:,1) ; 
 imwrite(I, fToSave);
