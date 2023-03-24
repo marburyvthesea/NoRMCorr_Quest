@@ -1,4 +1,4 @@
-function [result] = quest_run_normcorr(path_to_data, name, gSig)
+function [result] = quest_run_normcorr(path_to_data,name)
 
 % demo file for applying the NoRMCorre motion correction algorithm on 
 % 1-photon widefield imaging data
@@ -37,7 +37,7 @@ if (0)
     %Ypc = Yf - Y;
     bound = size(hLarge,1);
 else
-    %gSig = 7; 
+    gSig = 7; 
     gSiz = 3*gSig; 
     psf = fspecial('gaussian', round(2*gSiz), gSig);
     ind_nonzero = (psf(:)>=max(psf(:,1)));
@@ -117,19 +117,10 @@ figure;
     
 %% save data 
 
-[p, f, e] = fileparts(strcat(path_to_data, name)) ; 
-fToSave = strcat(p, '\',  f, '___motion_corrected', '.tif') ; 
 
-I = mat2gray(Mpr(:,:,1));
-%I = M2(:,:,1) ; 
-imwrite(I, fToSave,'tif');
-
-for ii=2:size(Mpr,3) 
-   I = mat2gray(Mpr(:,:,ii));
-   %I = M2(:,:,ii) ;
-   imwrite(I, fToSave,'tif', "WriteMode","append");   
-end
-
+    
+    
+    
     
 %% display downsampled data
 

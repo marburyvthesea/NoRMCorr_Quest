@@ -15,6 +15,11 @@ cd ~
 #path to file (tiff should work)
 
 INPUT_folder=$1
+
+# some parameters
+INPUT_gSig=7
+
+
 echo $INPUT_files_to_analyze
 
 #add project directory to PATH
@@ -30,4 +35,4 @@ cd /home/jma819/NoRMCorre_Quest
 
 
 
-matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorre_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';fnRunNormcorrSession(folder);exit;"
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorre_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);fnRunNormcorrSession(folder, gSig, 5);exit;"
