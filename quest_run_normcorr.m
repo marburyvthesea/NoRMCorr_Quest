@@ -136,70 +136,70 @@ end
     
 %% display downsampled data
 
-tsub = 5;
+%tsub = 5;
 
-Y_ds = downsample_data(Y,'time',tsub);
-Yf_ds = downsample_data(Yf,'time',tsub);
-M1_ds = downsample_data(M1,'time',tsub);
-M1f_ds = downsample_data(Mr,'time',tsub);
-M2_ds = downsample_data(M2,'time',tsub);
-M2f_ds = downsample_data(Mpr,'time',tsub);
-nnY_ds = quantile(Y_ds(:),0.0005);
-mmY_ds = quantile(Y_ds(:),0.9995);
-nnYf_ds = quantile(Yf_ds(:),0.0005);
-mmYf_ds = quantile(Yf_ds(:),0.99995);
+%Y_ds = downsample_data(Y,'time',tsub);
+%Yf_ds = downsample_data(Yf,'time',tsub);
+%M1_ds = downsample_data(M1,'time',tsub);
+%M1f_ds = downsample_data(Mr,'time',tsub);
+%M2_ds = downsample_data(M2,'time',tsub);
+%M2f_ds = downsample_data(Mpr,'time',tsub);
+%nnY_ds = quantile(Y_ds(:),0.0005);
+%mmY_ds = quantile(Y_ds(:),0.9995);
+%nnYf_ds = quantile(Yf_ds(:),0.0005);
+%mmYf_ds = quantile(Yf_ds(:),0.99995);
 %%  
 
-[p, f, e] = fileparts(strcat(path_to_data, name)) ; 
-fToSave = strcat(p, '\',  f, '_motion_corrected', '.tif') ; 
+%[p, f, e] = fileparts(strcat(path_to_data, name)) ; 
+%fToSave = strcat(p, '\',  f, '_motion_corrected', '.tif') ; 
 
-make_avi = false; % save a movie
-if make_avi
-    vidObj = VideoWriter(fToSave);
-    set(vidObj,'FrameRate',30);
-    open(vidObj);
-end
-fig = figure;
-    screensize = get(0,'Screensize' );
-    fac = min(min((screensize(3:4)-100)./[3*d2,d1]),10);
-    set(gcf, 'PaperUnits', 'points', 'Units', 'points');
-    set(gcf, 'Position', round([100 100 fac*3*d2 fac*d1]));
+%make_avi = false; % save a movie
+%if make_avi
+%    vidObj = VideoWriter(fToSave);
+%    set(vidObj,'FrameRate',30);
+%    open(vidObj);
+%end
+%fig = figure;
+%    screensize = get(0,'Screensize' );
+%    fac = min(min((screensize(3:4)-100)./[3*d2,d1]),10);
+%    set(gcf, 'PaperUnits', 'points', 'Units', 'points');
+%    set(gcf, 'Position', round([100 100 fac*3*d2 fac*d1]));
 
-for t = 1:1:size(Y_ds,3)
-    if (0)
+%for t = 1:1:size(Y_ds,3)
+%    if (0)
         % plot filtered data
-        subplot(131);imagesc(Y_ds(:,:,t),[nnY_ds,mmY_ds]); xlabel('Raw data (downsampled)','fontsize',14,'fontweight','bold'); axis equal; axis tight;
-        colormap('bone');
-        set(gca,'XTick',[],'YTick',[]);
-        subplot(132);imagesc(M1_ds(:,:,t),[nnY_ds,mmY_ds]); xlabel('rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
-        title(sprintf('Frame %i out of %i',t,size(Y_ds,3)),'fontweight','bold','fontsize',14); 
-        colormap('bone')
-        set(gca,'XTick',[],'YTick',[]);
-        subplot(133);imagesc(M2_ds(:,:,t),[nnY_ds,mmY_ds]); xlabel('non-rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
-        colormap('bone')
-        set(gca,'XTick',[],'YTick',[]);
-    else
+%        subplot(131);imagesc(Y_ds(:,:,t),[nnY_ds,mmY_ds]); xlabel('Raw data (downsampled)','fontsize',14,'fontweight','bold'); axis equal; axis tight;
+%        colormap('bone');
+%        set(gca,'XTick',[],'YTick',[]);
+%        subplot(132);imagesc(M1_ds(:,:,t),[nnY_ds,mmY_ds]); xlabel('rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
+%        title(sprintf('Frame %i out of %i',t,size(Y_ds,3)),'fontweight','bold','fontsize',14); 
+%        colormap('bone')
+%        set(gca,'XTick',[],'YTick',[]);
+%        subplot(133);imagesc(M2_ds(:,:,t),[nnY_ds,mmY_ds]); xlabel('non-rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
+%        colormap('bone')
+%        set(gca,'XTick',[],'YTick',[]);
+%    else
         % plot full data
-        subplot(131);imagesc(Yf_ds(:,:,t),[nnYf_ds,mmYf_ds]); xlabel('Raw data (downsampled)','fontsize',14,'fontweight','bold'); axis equal; axis tight;
-        colormap('bone');
-        set(gca,'XTick',[],'YTick',[]);
-        subplot(132);imagesc(M1f_ds(:,:,t),[nnYf_ds,mmYf_ds]); xlabel('rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
-        title(sprintf('Frame %i out of %i',t,size(Y_ds,3)),'fontweight','bold','fontsize',14); 
-        colormap('bone')
-        set(gca,'XTick',[],'YTick',[]);
-        subplot(133);imagesc(M2f_ds(:,:,t),[nnYf_ds,mmYf_ds]); xlabel('non-rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
-        colormap('bone')
-        set(gca,'XTick',[],'YTick',[]);
-    end
-    drawnow;
-    if make_avi  
-        currFrame = getframe(fig);
-        writeVideo(vidObj,currFrame);    
-    end
-end
-if make_avi
-    close(vidObj);
-end
+%        subplot(131);imagesc(Yf_ds(:,:,t),[nnYf_ds,mmYf_ds]); xlabel('Raw data (downsampled)','fontsize',14,'fontweight','bold'); axis equal; axis tight;
+%        colormap('bone');
+%        set(gca,'XTick',[],'YTick',[]);
+%        subplot(132);imagesc(M1f_ds(:,:,t),[nnYf_ds,mmYf_ds]); xlabel('rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
+%        title(sprintf('Frame %i out of %i',t,size(Y_ds,3)),'fontweight','bold','fontsize',14); 
+%        colormap('bone')
+%        set(gca,'XTick',[],'YTick',[]);
+%        subplot(133);imagesc(M2f_ds(:,:,t),[nnYf_ds,mmYf_ds]); xlabel('non-rigid corrected','fontsize',14,'fontweight','bold'); axis equal; axis tight;
+%        colormap('bone')
+%        set(gca,'XTick',[],'YTick',[]);
+%    end
+%    drawnow;
+%    if make_avi  
+%        currFrame = getframe(fig);
+%        writeVideo(vidObj,currFrame);    
+%    end
+%end
+%if make_avi
+%    close(vidObj);
+%end
 
 result=true;
 end

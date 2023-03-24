@@ -35,4 +35,9 @@ cd /home/jma819/NoRMCorr_Quest
 
 
 
-matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);groupMotionCorrectedFiles(folder, '*motion_corrected.tif', 5);exit;"
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);exit;"
+
+echo 'finished normcorr'
+echo 'grouping frames'
+
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));folder='$INPUT_folder';groupMotionCorrectedFiles(folder, '*motion_corrected.tif', 5);exit;"
