@@ -118,7 +118,7 @@ figure;
 %% save data 
 
 [p, f, e] = fileparts(strcat(path_to_data, name)) ; 
-fToSave = strcat(p, '\',  f, '___motion_corrected', '.tif') ; 
+fToSave = strcat(p, '/',  f, '___motion_corrected', '.tif') ; 
 
 disp('saving data');
 disp(fToSave); 
@@ -153,7 +153,7 @@ mmYf_ds = quantile(Yf_ds(:),0.99995);
 [p, f, e] = fileparts(strcat(path_to_data, name)) ; 
 fToSave = strcat(p, '\',  f, '_motion_corrected', '.tif') ; 
 
-make_avi = true; % save a movie
+make_avi = false; % save a movie
 if make_avi
     vidObj = VideoWriter(fToSave);
     set(vidObj,'FrameRate',30);
