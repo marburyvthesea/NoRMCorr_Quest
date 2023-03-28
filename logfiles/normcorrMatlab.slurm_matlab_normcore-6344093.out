@@ -1,0 +1,357 @@
+
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 7 workers.
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 316 Column:
+96
+The temporary variable lb will be cleared at the beginning of each iteration of
+the parfor loop.
+Any value assigned to it before the loop will be lost.  If lb is used before it
+is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 10)] 
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 316 Column:
+112
+The temporary variable ub will be cleared at the beginning of each iteration of
+the parfor loop.
+Any value assigned to it before the loop will be lost.  If ub is used before it
+is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 10)] 
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 319 Column:
+52
+The temporary variable output will be cleared at the beginning of each
+iteration of the parfor loop.
+Any value assigned to it before the loop will be lost.  If output is used
+before it is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 10)] 
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 42.683277 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 10.901720 seconds.
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 80.454735 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 24.810543 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised00_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 36.197937 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 10.043086 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 79.948632 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 26.767678 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised01_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 34.854488 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.712857 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 76.230563 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 23.794600 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised02_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 35.359107 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 11.812314 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 77.776076 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 25.994398 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised03_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 35.248200 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.455810 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 76.841057 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 25.458956 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised04_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 35.031906 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.349695 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 77.632163 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 26.108770 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised05_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 34.190976 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.568519 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 74.714427 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 25.605931 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised06_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 33.891712 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 10.308426 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 74.319969 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 24.494530 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised07_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 34.099572 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.407132 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 75.476087 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 25.114648 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised08_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 33.975944 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.362664 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 73.828149 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 24.489058 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised09_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 34.257730 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.548196 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 72.820538 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 23.653282 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised10_converted___motion_corrected.tif
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 893 frames registered, iteration 1 out of 1..400 out of 893 frames registered, iteration 1 out of 1..600 out of 893 frames registered, iteration 1 out of 1..800 out of 893 frames registered, iteration 1 out of 1..893 out of 893 frames registered, iteration 1 out of 1..
+Elapsed time is 30.499967 seconds.
+893 out of 893 frames registered 
+
+Elapsed time is 8.364866 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 893 frames registered, iteration 1 out of 1..100 out of 893 frames registered, iteration 1 out of 1..150 out of 893 frames registered, iteration 1 out of 1..200 out of 893 frames registered, iteration 1 out of 1..250 out of 893 frames registered, iteration 1 out of 1..300 out of 893 frames registered, iteration 1 out of 1..350 out of 893 frames registered, iteration 1 out of 1..400 out of 893 frames registered, iteration 1 out of 1..450 out of 893 frames registered, iteration 1 out of 1..500 out of 893 frames registered, iteration 1 out of 1..550 out of 893 frames registered, iteration 1 out of 1..600 out of 893 frames registered, iteration 1 out of 1..650 out of 893 frames registered, iteration 1 out of 1..700 out of 893 frames registered, iteration 1 out of 1..750 out of 893 frames registered, iteration 1 out of 1..800 out of 893 frames registered, iteration 1 out of 1..850 out of 893 frames registered, iteration 1 out of 1..893 out of 893 frames registered, iteration 1 out of 1..
+Elapsed time is 66.741185 seconds.
+893 out of 893 frames registered 
+
+Elapsed time is 24.655722 seconds.
+saving data
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/15_18_25/My_V4_Miniscope/Denoised//graydenoised11_converted___motion_corrected.tif
+finished normcorr
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 

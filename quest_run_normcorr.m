@@ -118,8 +118,7 @@ figure;
 %% save data 
 
 [p, f, e] = fileparts(strcat(path_to_data, name)) ; 
-fToSave = strcat(p, '/',  f, '___motion_corrected', '.tif') ; 
-
+fToSave = strcat(p, '//',  f, '___motion_corrected', '.tif') ; 
 disp('saving data');
 disp(fToSave); 
 

@@ -1,0 +1,16 @@
+/var/spool/slurmd/job6233008/slurm_script: line 39: cd: /projects/p30771/MATLAB/NoRMCorre_JJM: No such file or directory
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+/scratch/jma819/scope_data/YiwenData/Dock10_Cre_mouse_2_Nov_8_2022/2023_01_17/14_52_51/My_V4_Miniscope/Denoised/gray
+{Error using run (line 66)
+normcorr_run_jjm.m not found.
+} 

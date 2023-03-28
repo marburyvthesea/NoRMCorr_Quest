@@ -1,0 +1,174 @@
+
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+                   R2018b (9.5.0.944444) 64-bit (glnxa64)
+                              August 28, 2018
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+connected to 7 workers.
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 316 Column:
+96
+The temporary variable lb will be cleared at the beginning of each iteration of
+the parfor loop.
+Any value assigned to it before the loop will be lost.  If lb is used before it
+is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 10)] 
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 316 Column:
+112
+The temporary variable ub will be cleared at the beginning of each iteration of
+the parfor loop.
+Any value assigned to it before the loop will be lost.  If ub is used before it
+is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 10)] 
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 319 Column:
+52
+The temporary variable output will be cleared at the beginning of each
+iteration of the parfor loop.
+Any value assigned to it before the loop will be lost.  If output is used
+before it is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 10)] 
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 41.504705 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 10.369928 seconds.
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 77.897846 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 23.616460 seconds.
+starting resampling 
+starting resampling 
+starting resampling 
+starting resampling 
+starting resampling 
+starting resampling 
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (29 minutes remaining)
+          SpmdEnabled: true
+
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 35.437926 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 9.159855 seconds.
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 76.551115 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 25.002496 seconds.
+starting resampling 
+starting resampling 
+starting resampling 
+starting resampling 
+starting resampling 
+starting resampling 
+{Error using fnRunNormcorrSession
+Too many input arguments.
+} 
+
+--------------------------------------------------------------------------------
+       Segmentation violation detected at Fri Mar 24 15:28:29 2023 -0500
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : UTF-8
+  Deployed                 : false
+  GNU C Library            : 2.17 stable
+  Graphics Driver          : Unknown software 
+  Java Version             : Java 1.8.0_152-b16 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : glnxa64
+  MATLAB Entitlement ID    : 7778825
+  MATLAB Root              : /hpc/software/matlab/R2018b
+  MATLAB Version           : 9.5.0.944444 (R2018b)
+  OpenGL                   : software
+  Operating System         : "Red Hat Enterprise Linux Server release 7.9 (Maipo)"
+  Process ID               : 171469
+  Processor ID             : x86 Family 6 Model 85 Stepping 7, GenuineIntel
+  Session Key              : 5c0b5242-e106-4f37-9660-9ca30c06c78a
+  Static TLS mitigation    : Disabled: Unnecessary 1
+  Window System            : No active display
+
+Fault Count: 1
+
+
+Abnormal termination
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000000
+  RCX = 00002abbb8dad5a8  RDX = 00002abbb00191e0
+  RSP = 00002abbb8dac370  RBP = 00002abbb8dac3c0
+  RSI = 00002abbb00191e0  RDI = 0000000000000000
+
+   R8 = 00002abbb00191e0   R9 = 0000000000000000
+  R10 = 00002abb8953e5c0  R11 = 00002abbfc686330
+  R12 = 00002abbb8dac3e0  R13 = 00002abbb8dac380
+  R14 = 00002abf7e1d4f20  R15 = 00002abbba0b6b30
+
+  RIP = 00002abcad167641  EFL = 0000000000010246
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00002abcad167641                        bin/glnxa64/libmwhgutils.so+00620097 _ZN7hgutils17BaseObjectCOSInfo9getClientEv+00000001
+[  1] 0x00002abcac7c476f                             bin/glnxa64/libmwhg.so+02504559
+[  2] 0x00002abcac7e1a38                             bin/glnxa64/libmwhg.so+02624056
+[  3] 0x00002abcac7e2cb7                             bin/glnxa64/libmwhg.so+02628791
+[  4] 0x00002abcac836eb5                             bin/glnxa64/libmwhg.so+02973365
+[  5] 0x00002abcac935478                             bin/glnxa64/libmwhg.so+04015224
+[  6] 0x00002abcac9960d9                             bin/glnxa64/libmwhg.so+04411609
+[  7] 0x00002abb8877ca11                       bin/glnxa64/libmwservices.so+02996753
+[  8] 0x00002abb8877d422                       bin/glnxa64/libmwservices.so+02999330
+[  9] 0x00002abb8877dd3b                       bin/glnxa64/libmwservices.so+03001659 _Z25svWS_ProcessPendingEventsiib+00000187
+[ 10] 0x00002abba087332c                            bin/glnxa64/libmwmcr.so+00709420
+[ 11] 0x00002abba0873b08                            bin/glnxa64/libmwmcr.so+00711432
+[ 12] 0x00002abba086bd92                            bin/glnxa64/libmwmcr.so+00679314
+[ 13] 0x00002abb8ad7dea5                             /lib64/libpthread.so.0+00032421
+[ 14] 0x00002abb894fdb0d                                   /lib64/libc.so.6+01043213 clone+00000109
+[ 15] 0x0000000000000000                                   <unknown-module>+00000000
+
+** This crash report has been saved to disk as /home/jma819/matlab_crash_dump.171469-1 **
+
+
+
+MATLAB is exiting because of fatal error
+/var/spool/slurmd/job6336303/slurm_script: line 38: 171469 Killed                  matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);fnRunNormcorrSession(folder, gSig, 5);exit;"

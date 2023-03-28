@@ -5,7 +5,7 @@ fileList = dir(fullfile(dirPath, regExp)) ;
 sizeFiles = size(fileList) ; 
 numFiles = sizeFiles(1, 1) ;
 
-parfor i = 1:group:numFiles
+for i = 1:group:numFiles
     if i+group-1 <= numFiles
         toGroup = fileList(i:i+group-1); 
         concatenate_files(toGroup, strcat(dirPath, num2str(i), '_', num2str(i+4), '_motioncorrected', '.h5'), 'hdf5')
