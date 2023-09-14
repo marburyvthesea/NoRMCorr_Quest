@@ -1,4 +1,4 @@
-% demo file for applying the NoRMCorre motion correction algorithm on 
+pwd% demo file for applying the NoRMCorre motion correction algorithm on 
 % 1-photon widefield imaging data
 % Example file is provided from the miniscope project page
 % www.miniscope.org
@@ -6,7 +6,7 @@
 clear;
 gcp;
 %% download data and convert to single precision
-name = '/Volumes/My_Passport/MiniscopeMovies/GRIN_h003_H12_M29_S0/msCam7.avi';
+name = '/Users/johnmarshall/Documents/Analysis/MiniscopeMovies/TestAnalysis/Yiwen/denoised00_converted.tif';
 path_split = split(name, '.');
 name_split = split(path_split{1,1}, '/');
 size_path = size(name_split);

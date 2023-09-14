@@ -116,21 +116,24 @@ figure;
 
     
 %% save data 
+% saves as 32bit multipage tiff
 
 [p, f, e] = fileparts(strcat(path_to_data, name)) ; 
 fToSave = strcat(p, '//',  f, '___motion_corrected', '.tif') ; 
 disp('saving data');
 disp(fToSave); 
 
-I = mat2gray(Mpr(:,:,1));
-%I = M2(:,:,1) ; 
-imwrite(I, fToSave);
+saveTiffScript;
 
-for ii=2:size(Mpr,3) 
-   I = mat2gray(Mpr(:,:,ii));
+%I = mat2gray(Mpr(:,:,1));
+%I = M2(:,:,1) ; 
+%imwrite(I, fToSave);
+
+%for ii=2:size(Mpr,3) 
+%   I = mat2gray(Mpr(:,:,ii));
    %I = M2(:,:,ii) ;
-   imwrite(I, fToSave, 'WriteMode','append');   
-end
+%   imwrite(I, fToSave, 'WriteMode','append');   
+%end
 
     
 %% display downsampled data
