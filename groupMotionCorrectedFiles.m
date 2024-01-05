@@ -4,7 +4,7 @@ fileList = dir(fullfile(dirPath, regExp)) ;
 
 sizeFiles = size(fileList) ; 
 numFiles = sizeFiles(1, 1) ;
-
+%%
 for i = 1:group:numFiles
     if i+group-1 <= numFiles
         toGroup = fileList(i:i+group-1); 

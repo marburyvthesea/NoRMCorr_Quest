@@ -5,8 +5,8 @@ pwd% demo file for applying the NoRMCorre motion correction algorithm on
 
 clear;
 gcp;
-%% download data and convert to single precision
-name = '/Users/johnmarshall/Documents/Analysis/MiniscopeMovies/TestAnalysis/Yiwen/denoised00_converted.tif';
+% download data and convert to single precision
+name = '/Users/johnmarshall/Documents/Analysis/MiniscopeMovies/TestAnalysis/Yiwen/15_24_05_21925/denoised01_converted.tif';
 path_split = split(name, '.');
 name_split = split(path_split{1,1}, '/');
 size_path = size(name_split);
@@ -30,7 +30,7 @@ Yf = single(Yf);
 framerate = 20; 
 
 
-%% perform some sort of deblurring/high pass filtering
+% perform some sort of deblurring/high pass filtering
 
 if (0)    
     hLarge = fspecial('average', 40);
@@ -52,11 +52,11 @@ else
     Y = imfilter(Yf,psf,'symmetric');
     bound = 0;
 end
-%% first try out rigid motion correction
+% first try out rigid motion correction
     % exclude boundaries due to high pass filtering effects
 options_r = NoRMCorreSetParms('d1',d1-bound,'d2',d2-bound,'bin_width',200,'max_shift',20,'iter',1,'correct_bidir',false,'output_type','hdf5','h5_filename',strcat(movie_name, '_motion_corrected'));
 
-%% register using the high pass filtered data and apply shifts to original data
+% register using the high pass filtered data and apply shifts to original data
 tic; [M1,shifts1,template1] = normcorre_batch(Y(bound/2+1:end-bound/2,bound/2+1:end-bound/2,:),options_r); toc % register filtered data
     % exclude boundaries due to high pass filtering effects
 tic; Mr = apply_shifts(Yf,shifts1,options_r,bound/2,bound/2); toc % apply shifts to full dataset
@@ -182,6 +182,20 @@ end
 if make_avi
     close(vidObj);
 end
+%% save data 
+% saves as 32bit multipage tiff
+
+[p, f, e] = fileparts(strcat(path_to_data, name)) ; 
+fToSave = strcat(p, '//',  f, '___motion_corrected', '.tif') ; 
+disp('saving data');
+disp(fToSave); 
+
+%%
+saveTiffScript;
+
+
+
+
 %% make single tiff video with filtered data for further processing
 
 make_tiff_output = true; % save a movie

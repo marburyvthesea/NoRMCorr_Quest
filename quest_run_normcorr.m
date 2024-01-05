@@ -123,17 +123,17 @@ fToSave = strcat(p, '//',  f, '___motion_corrected', '.tif') ;
 disp('saving data');
 disp(fToSave); 
 
-saveTiffScript;
+%saveTiffScript;
 
-%I = mat2gray(Mpr(:,:,1));
+I = mat2gray(Mpr(:,:,1));
 %I = M2(:,:,1) ; 
-%imwrite(I, fToSave);
+imwrite(I, fToSave);
 
-%for ii=2:size(Mpr,3) 
-%   I = mat2gray(Mpr(:,:,ii));
-   %I = M2(:,:,ii) ;
-%   imwrite(I, fToSave, 'WriteMode','append');   
-%end
+for ii=2:size(Mpr,3) 
+   I = mat2gray(Mpr(:,:,ii));
+%   I = M2(:,:,ii) ;
+   imwrite(I, fToSave, 'WriteMode','append');   
+end
 
     
 %% display downsampled data

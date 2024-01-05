@@ -6,7 +6,7 @@
 clear;
 gcp;
 %% download data and convert to single precision
-name = '/Volumes/My_Passport/MiniscopeMovies/test/msCam1.avi';
+name = '/Users/johnmarshall/Documents/Analysis/MiniscopeMovies/YiwenData/normcorrTest/';
 path_split = split(name, '.');
 name_split = split(path_split{1,1}, '/');
 size_path = size(name_split);

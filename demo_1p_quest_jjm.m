@@ -119,6 +119,19 @@ function [] = run_normcorr_jjm(nam, gSig, GSiz, Fs, ssub)
     mmY_ds = quantile(Y_ds(:),0.9995);
     nnYf_ds = quantile(Yf_ds(:),0.0005);
     mmYf_ds = quantile(Yf_ds(:),0.99995);
+
+%% save data 
+% saves as 32bit multipage tiff
+
+[p, f, e] = fileparts(strcat(path_to_data, name)) ; 
+fToSave = strcat(p, '//',  f, '___motion_corrected', '.tif') ; 
+disp('saving data');
+disp(fToSave); 
+
+%%
+saveTiffScript;
+    
+    
 %%  
 
     make_tiff_output = true; % save a movie
