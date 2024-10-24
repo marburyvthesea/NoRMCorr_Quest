@@ -1,0 +1,43 @@
+
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+ans =
+
+    '/scratch/jma819/scope_data/OpenField/GRIN_011/normcorrCorrected/1_5_motion*corrected.h5'
+
+
+ans =
+
+    '/scratch/jma819/scope_data/OpenField/GRIN_011/normcorrCorrected/6_10_motion*corrected.h5'
+
+
+ans =
+
+    '/scratch/jma819/scope_data/OpenField/GRIN_011/normcorrCorrected/11_15_motion*corrected.h5'
+
+
+ans =
+
+    '/scratch/jma819/scope_data/OpenField/GRIN_011/normcorrCorrected/16_20_motion*corrected.h5'
+
+
+ans =
+
+    '/scratch/jma819/scope_data/OpenField/GRIN_011/normcorrCorrected/21_25_motion*corrected.h5'
+
+
+ans =
+
+    '/scratch/jma819/scope_data/OpenField/GRIN_011/normcorrCorrected/26_26_motion*corrected.h5'
+

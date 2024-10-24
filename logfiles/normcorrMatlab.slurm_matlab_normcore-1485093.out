@@ -1,0 +1,26 @@
+
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+{Unable to perform assignment because the size of the left side is 600-by-600
+and the size of the right side is 1-by-600.
+
+Error in read_file (line 33)
+       imData(:,:,i)=TifLink.read();
+
+Error in concatenate_files (line 24)
+Y1 = read_file(fullfile(files(1).folder, files(1).name));
+
+Error in groupMotionCorrectedFiles (line 11)
+        concatenate_files(toGroup, strcat(dirPath, num2str(i), '_',
+        num2str(i+4), '_motioncorrected', '.h5'), 'hdf5')
+} 
