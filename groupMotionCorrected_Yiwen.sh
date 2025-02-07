@@ -15,6 +15,7 @@ cd ~
 #path to file (tiff should work)
 
 INPUT_folder=$1
+INPUT_group=$2
 
 # some parameters
 INPUT_gSig=7
@@ -40,4 +41,4 @@ cd /home/jma819/NoRMCorr_Quest
 #echo 'finished normcorr'
 echo 'grouping frames'
 
-matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));folder='$INPUT_folder';groupMotionCorrectedFiles(folder, '*motion_corrected.tif', 5);exit;"
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));folder='$INPUT_folder';groupMotionCorrectedFiles(folder, '*motion_corrected.tif', str2num($INPUT_group);exit;"

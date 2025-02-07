@@ -30,8 +30,10 @@ h5write(file_path, dataset_name, Y1_32bit, [1, 1, 1], dataSize);
 
 % Loop through the rest of the files
 for i = 2:numFiles
+
     % Load the next file
     Yi = read_file(fullfile(files(i).folder, files(i).name));
+    disp(files(i).name);
     Yi_32bit = single(Yi);  % Convert to float32
 
     % Get the size of the current data
@@ -39,7 +41,7 @@ for i = 2:numFiles
 
     % Get the current size of the dataset
     info = h5info(file_path, dataset_name);
-    currentFrames = info.Datasets.Dataspace.Size(3);
+    currentFrames = info.Dataspace.Size(3);
 
     % Write the new data, appending it to the existing dataset
     h5write(file_path, dataset_name, Yi_32bit, [1, 1, currentFrames + 1], dataSize);
