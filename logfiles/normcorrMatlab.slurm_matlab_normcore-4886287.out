@@ -41,3 +41,9 @@ ans =
 
 graydenoised21_converted___motion_corrected.tif
 graydenoised22_converted___motion_corrected.tif
+graydenoised23_converted___motion_corrected.tif
+
+ans =
+
+    '/scratch/jma819/scope_data/YiwenData/989_motion_corrected_01/21_24_motion_corrected.h5'
+
