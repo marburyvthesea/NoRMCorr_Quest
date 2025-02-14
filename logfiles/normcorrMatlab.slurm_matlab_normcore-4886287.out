@@ -1,0 +1,43 @@
+
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+graydenoised01_converted___motion_corrected.tif
+graydenoised02_converted___motion_corrected.tif
+graydenoised03_converted___motion_corrected.tif
+graydenoised04_converted___motion_corrected.tif
+graydenoised05_converted___motion_corrected.tif
+graydenoised06_converted___motion_corrected.tif
+graydenoised07_converted___motion_corrected.tif
+graydenoised08_converted___motion_corrected.tif
+graydenoised09_converted___motion_corrected.tif
+
+ans =
+
+    '/scratch/jma819/scope_data/YiwenData/989_motion_corrected_01/1_10_motion_corrected.h5'
+
+graydenoised11_converted___motion_corrected.tif
+graydenoised12_converted___motion_corrected.tif
+graydenoised13_converted___motion_corrected.tif
+graydenoised14_converted___motion_corrected.tif
+graydenoised15_converted___motion_corrected.tif
+graydenoised16_converted___motion_corrected.tif
+graydenoised17_converted___motion_corrected.tif
+graydenoised18_converted___motion_corrected.tif
+graydenoised19_converted___motion_corrected.tif
+
+ans =
+
+    '/scratch/jma819/scope_data/YiwenData/989_motion_corrected_01/11_20_motion_corrected.h5'
+
+graydenoised21_converted___motion_corrected.tif
+graydenoised22_converted___motion_corrected.tif
