@@ -1,0 +1,18 @@
+
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+ addpath(genpath('/home/jma819/NoRMCorr_Quest/'));folder='/scratch/jma819/scope_data/YiwenData/989_motion_corrected_01/';groupMotionCorrectedFiles(folder, '*motion_corrected.tif', str2num(24);exit;
+                                                                                                                                                                                               |
+{Error: Invalid expression. When calling a function or indexing a variable, use
+parentheses. Otherwise, check for mismatched delimiters.
+} 

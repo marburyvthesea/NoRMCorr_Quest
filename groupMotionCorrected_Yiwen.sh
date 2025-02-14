@@ -41,4 +41,4 @@ cd /home/jma819/NoRMCorr_Quest
 #echo 'finished normcorr'
 echo 'grouping frames'
 
-matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));folder='$INPUT_folder';groupMotionCorrectedFiles(folder, '*motion_corrected.tif', str2num($INPUT_group);exit;"
+matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));folder='$INPUT_folder';groupMotionCorrectedFiles(folder, '*motion_corrected.tif', group=str2num('$INPUT_group');exit;"
