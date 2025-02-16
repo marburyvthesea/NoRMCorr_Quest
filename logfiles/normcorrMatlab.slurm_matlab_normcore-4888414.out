@@ -1,0 +1,98 @@
+
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+Starting parallel pool (parpool) using the 'local' profile ...
+Preserving jobs with IDs: 433 because they contain crash dump files.
+You can use 'delete(myCluster.Jobs)' to remove all jobs created with profile local. To create 'myCluster' use 'myCluster = parcluster('local')'.
+connected to 7 workers.
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 7
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 316 Column:
+96
+The temporary variable lb will be cleared at the beginning of each iteration of
+the parfor loop.
+Any value assigned to it before the loop will be lost.  If lb is used before it
+is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 16)] 
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 316 Column:
+112
+The temporary variable ub will be cleared at the beginning of each iteration of
+the parfor loop.
+Any value assigned to it before the loop will be lost.  If ub is used before it
+is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 16)] 
+[Warning: File: /home/jma819/NoRMCorr_Quest/normcorre_batch.m Line: 319 Column:
+52
+The temporary variable output will be cleared at the beginning of each
+iteration of the parfor loop.
+Any value assigned to it before the loop will be lost.  If output is used
+before it is assigned in the parfor loop, a runtime error will occur.
+See Parallel for Loops in MATLAB, "Temporary Variables".] 
+[> In quest_run_normcorr (line 56)
+  In fnRunNormcorrSession (line 16)] 
+Registering the first 100 frames just to obtain a good template......done. 
+Template initialization complete.  Now registering all the frames with new template. 
+200 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 34.849322 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 8.458227 seconds.
+[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+Template initialization complete.  Now registering all the frames with new template. 
+50 out of 1000 frames registered, iteration 1 out of 1..100 out of 1000 frames registered, iteration 1 out of 1..150 out of 1000 frames registered, iteration 1 out of 1..200 out of 1000 frames registered, iteration 1 out of 1..250 out of 1000 frames registered, iteration 1 out of 1..300 out of 1000 frames registered, iteration 1 out of 1..350 out of 1000 frames registered, iteration 1 out of 1..400 out of 1000 frames registered, iteration 1 out of 1..450 out of 1000 frames registered, iteration 1 out of 1..500 out of 1000 frames registered, iteration 1 out of 1..550 out of 1000 frames registered, iteration 1 out of 1..600 out of 1000 frames registered, iteration 1 out of 1..650 out of 1000 frames registered, iteration 1 out of 1..700 out of 1000 frames registered, iteration 1 out of 1..750 out of 1000 frames registered, iteration 1 out of 1..800 out of 1000 frames registered, iteration 1 out of 1..850 out of 1000 frames registered, iteration 1 out of 1..900 out of 1000 frames registered, iteration 1 out of 1..950 out of 1000 frames registered, iteration 1 out of 1..1000 out of 1000 frames registered, iteration 1 out of 1..
+Elapsed time is 66.533780 seconds.
+1000 out of 1000 frames registered 
+
+Elapsed time is 21.204989 seconds.
+saving data
+/scratch/jma819/scope_data//testdenoised00_converted//testdenoised00_converted___motion_corrected.tif
+{Error using imwrite (line 467)
+Unable to open file
+"/scratch/jma819/scope_data//testdenoised00_converted//testdenoised00_converted___motion_corrected.tif"
+for writing.  You might not have write permission.
+
+Error in quest_run_normcorr (line 130)
+imwrite(I, fToSave);
+
+Error in fnRunNormcorrSession (line 16)
+    quest_run_normcorr(fileList(i,1).folder, fileList(i,1).name, gSig);
+} 
+MATLAB: management.cpp:671: find: Assertion `' failed.
+MATLAB: management.cpp:671: find: Assertion `' failed.
+/var/spool/slurmd/job4888414/slurm_script: line 38: 132881 Aborted                 (core dumped) matlab -nosplash -nodesktop -r "addpath(genpath('/home/jma819/NoRMCorr_Quest/'));maxNumCompThreads(str2num(getenv('SLURM_NPROCS')));folder='$INPUT_folder';gSig=$INPUT_gSig;fnRunNormcorrSession(folder, gSig);exit;"
+finished normcorr
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 

@@ -1,0 +1,73 @@
+
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+TIFF_framesdenoised01___motion_corrected.tif
+TIFF_framesdenoised02___motion_corrected.tif
+TIFF_framesdenoised03___motion_corrected.tif
+TIFF_framesdenoised04___motion_corrected.tif
+TIFF_framesdenoised05___motion_corrected.tif
+TIFF_framesdenoised06___motion_corrected.tif
+TIFF_framesdenoised07___motion_corrected.tif
+TIFF_framesdenoised08___motion_corrected.tif
+TIFF_framesdenoised09___motion_corrected.tif
+TIFF_framesdenoised10___motion_corrected.tif
+TIFF_framesdenoised11___motion_corrected.tif
+TIFF_framesdenoised12___motion_corrected.tif
+TIFF_framesdenoised13___motion_corrected.tif
+TIFF_framesdenoised14___motion_corrected.tif
+TIFF_framesdenoised15___motion_corrected.tif
+TIFF_framesdenoised16___motion_corrected.tif
+TIFF_framesdenoised17___motion_corrected.tif
+TIFF_framesdenoised18___motion_corrected.tif
+TIFF_framesdenoised19___motion_corrected.tif
+TIFF_framesdenoised20___motion_corrected.tif
+TIFF_framesdenoised21___motion_corrected.tif
+TIFF_framesdenoised22___motion_corrected.tif
+TIFF_framesdenoised23___motion_corrected.tif
+TIFF_framesdenoised24___motion_corrected.tif
+TIFF_framesdenoised25___motion_corrected.tif
+TIFF_framesdenoised26___motion_corrected.tif
+TIFF_framesdenoised27___motion_corrected.tif
+TIFF_framesdenoised28___motion_corrected.tif
+TIFF_framesdenoised29___motion_corrected.tif
+TIFF_framesdenoised30___motion_corrected.tif
+TIFF_framesdenoised31___motion_corrected.tif
+TIFF_framesdenoised32___motion_corrected.tif
+TIFF_framesdenoised33___motion_corrected.tif
+TIFF_framesdenoised34___motion_corrected.tif
+TIFF_framesdenoised35___motion_corrected.tif
+TIFF_framesdenoised36___motion_corrected.tif
+TIFF_framesdenoised37___motion_corrected.tif
+TIFF_framesdenoised38___motion_corrected.tif
+TIFF_framesdenoised39___motion_corrected.tif
+TIFF_framesdenoised40___motion_corrected.tif
+TIFF_framesdenoised41___motion_corrected.tif
+TIFF_framesdenoised42___motion_corrected.tif
+TIFF_framesdenoised43___motion_corrected.tif
+TIFF_framesdenoised44___motion_corrected.tif
+TIFF_framesdenoised45___motion_corrected.tif
+TIFF_framesdenoised46___motion_corrected.tif
+TIFF_framesdenoised47___motion_corrected.tif
+TIFF_framesdenoised48___motion_corrected.tif
+TIFF_framesdenoised49___motion_corrected.tif
+TIFF_framesdenoised50___motion_corrected.tif
+TIFF_framesdenoised51___motion_corrected.tif
+TIFF_framesdenoised52___motion_corrected.tif
+TIFF_framesdenoised53___motion_corrected.tif
+TIFF_framesdenoised54___motion_corrected.tif
+TIFF_framesdenoised55___motion_corrected.tif
+
+ans =
+
+    '/scratch/jma819/scope_data/CharlotteData/groupMotionCorrectedFile_m7_d0_09_19_05/1_56_motion_corrected.h5'
+

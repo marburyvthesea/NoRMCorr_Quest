@@ -1,0 +1,27 @@
+
+grouping frames
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2018 The MathWorks, Inc.
+              R2018a Update 6 (9.4.0.949201) 64-bit (glnxa64)
+                             September 5, 2018
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+TIFF_framesdenoised01___motion_corrected.tif
+TIFF_framesdenoised02___motion_corrected.tif
+TIFF_framesdenoised03___motion_corrected.tif
+TIFF_framesdenoised04___motion_corrected.tif
+TIFF_framesdenoised05___motion_corrected.tif
+TIFF_framesdenoised06___motion_corrected.tif
+TIFF_framesdenoised07___motion_corrected.tif
+TIFF_framesdenoised08___motion_corrected.tif
+TIFF_framesdenoised09___motion_corrected.tif
+
+ans =
+
+    '/scratch/jma819/scope_data/CharlotteData/groupMotionCorrectedFile_m7_d0_09_19_05_00_09/1_10_motion_corrected.h5'
+
